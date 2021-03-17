@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+h1{
+
+}
+h2{
+
+}
+h3{
+
+}
+h4{
+
+}
+h5{
+
+}
+p{
+    line-height: 25px;
+    margin: 25px auto;
+}
+.main-content{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.btn{
+    display: block;
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    background-color: darkred;
+    text-align: center;
+    color: white;
+}
+
+/* title */
+.title{
+    text-align: center;
+}
+.title>h3{
+    margin: 10px 0;
+}
+.title>h2{
+    margin-bottom: 10px;
+}
+.title.left{
+    text-align: left;
+}
+.title.rigth{
+    text-align: right;
+}
+.main-description,
+.main-history,
+.main-events{
+    padding: 100px 0;
+}
+/**********************************************************/
+/**********************  HEADER ***************************/
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.nav{
+    display: flex;
+}
+.nav a{
+    display: block;
+}
+.nav a:not(:last-child){
+    margin-right: 15px;
+} 
+/**********************************************************/
+/**********************  SLIDER  **************************/
+.main-hero-banner{
+    width: 100%;
+    background-color: violet;
+    position: relative;
+}
+.slider{
+    display: flex;
+    height: 100vh;
+}
+.content-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    height: inherit;
+}
+.content-img{
+    width: 50%;
+    background-color: turquoise;
+}
+/* btn - hero - banner*/
+.hero-banner{
+    height: 100vh;
+}
+.btn-hero-banner{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 3%;
+
+}
+.btn-hero-banner a{
+    width: 60px;
+    display: block;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid;
+}
+/* circle-hero-banner */
+.circle-hero-banner{
+    position: absolute;
+    bottom: 3%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-hero-banner :not(:last-child){
+    margin-right: 10px;
+}
+.rect{
+    width: 40px;
+    height: 5px;
+    background-color: yellow;
+}
+.circle{
+    border-radius: 50%;
+    background-color: yellow;
+    width: 15px;
+    height: 15px;
+}
+/**********************************************************/
+/********************  DESCRIPTION  ***********************/
+.description{
+    text-align: center;
+}
+.description p{
+    width: 50%;
+    
+}
+.card-global-description{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card-description{
+    max-width: 300px;
+    width: 25%;
+    height: 270px;
+    background-color: yellow;
+    padding: 30px;
+    
+}
+/**********************************************************/
+/************************  HISTORY  ***********************/
+.main-history{
+    background-color: black;
+}
+.history{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.content-history{
+    max-width: 1100px;
+    width: 90%;
+    background-color: white;
+}
+.content-history-text{
+    width: 50%;
+    background-color: yellowgreen;
+    padding: 30px;
+}
+/**********************************************************/
+/************************  EVENTS  ***********************/
+.main-events{
+    background-color: black;
+}
+.events{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.content-events{
+    max-width: 1100px;
+    width: 90%;
+    background-color: white;
+    display: flex;
+}
+.content-events-img{
+    width: 50%;
+    background-color: yellow;
+}
+.content-events-text{
+    
+    padding: 30px;
+    text-align: right;
+}
+.content-events-text a{
+    margin-left: auto;
+}
