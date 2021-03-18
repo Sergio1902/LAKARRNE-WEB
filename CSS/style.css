@@ -3,6 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+@font-face {
+    font-family: 'BrushType';
+    src: url('../fonts/title/BrushType\ Bold.woff2') format('woff2'),
+         url('../fonts/title/BrushType\ Bold.woff') format('woff'),
+         url('../fonts/title/BrushType\ Bold.ttf')  format('truetype');
+}
+@font-face {
+    font-family: 'Finland';
+    src: url('../fonts/indian/Finland-Regular.woff2') format('woff2'),
+        url('../fonts/indian/Finland-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 img{
     max-width: 100%;
     height: auto;
@@ -10,15 +26,27 @@ img{
 }
 a{
     text-decoration: none;
+    font-family: "Finland";
+    font-size: 25px;
+    
+}
+h1,h2,h3,h4,h5{
+    margin: 0;
 }
 h1{
-
+    font-family: "BrushType";
+    font-size: 120px;
+    line-height: 100px;
+    
 }
 h2{
-
+    font-family: "BrushType";
+    font-size: 40px;
 }
 h3{
-
+    font-family: "BrushType";
+    font-size: 25px;
+    font-weight: 400;
 }
 h4{
 
@@ -29,6 +57,14 @@ h5{
 p{
     line-height: 25px;
     margin: 25px auto;
+    font-family: "Finland";
+    font-size: 25px;
+}
+span{
+    display: block;
+    font-family:"Finland";
+    font-size: 38px;
+    margin-bottom: 25px;
 }
 .main-content{
     max-width: 1200px;
@@ -40,15 +76,20 @@ p{
     display: block;
     width: 40%;
     height: 40px;
-    padding: 10px;
+    padding: 4px;
     background-color: darkred;
     text-align: center;
     color: white;
+    
 }
+
+
+
 
 /* title */
 .title{
     text-align: center;
+    
 }
 .title>h3{
     margin: 10px 0;
@@ -93,7 +134,6 @@ header{
 /**********************  SLIDER  **************************/
 .main-hero-banner{
     width: 100%;
-    background-color: violet;
     position: relative;
 }
 .slider{
