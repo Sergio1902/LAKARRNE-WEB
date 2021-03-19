@@ -28,7 +28,7 @@ a{
     text-decoration: none;
     font-family: "Finland";
     font-size: 25px;
-    
+    color: black;
 }
 h1,h2,h3,h4,h5{
     margin: 0;
@@ -46,10 +46,10 @@ h2{
 h3{
     font-family: "BrushType";
     font-size: 25px;
-    font-weight: 400;
 }
 h4{
-
+    font-family: "Finland";
+    font-size: 18px;
 }
 h5{
 
@@ -89,10 +89,11 @@ span{
 /* title */
 .title{
     text-align: center;
-    
 }
-.title>h3{
+.title>span{
     margin: 10px 0;
+    font-family: "Finland";
+    font-size: 28px;
 }
 .title>h2{
     margin-bottom: 10px;
@@ -116,20 +117,25 @@ header{
     position: fixed;
     width: 100%;
     z-index: 10000;
+    
 }
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .nav{
+    width: 50%;
     display: flex;
+    justify-content: space-evenly;
 }
 .nav a{
     display: block;
 }
-.nav a:not(:last-child){
-    margin-right: 15px;
-} 
+/* logo */
+.header img{
+    width: 100px;
+}
 /**********************************************************/
 /**********************  SLIDER  **************************/
 .main-hero-banner{
@@ -198,23 +204,33 @@ header{
 .description{
     text-align: center;
 }
-.description p{
+.description>p{
     width: 50%;
-    
 }
 .card-global-description{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    margin: 40px 0;
 }
 .card-description{
     max-width: 300px;
     width: 25%;
     height: 270px;
-    background-color: yellow;
     padding: 30px;
-    
 }
+.card-description>p{
+    margin: 0;
+    padding: 10px 0;
+    font-size: 22px;
+}
+.card-logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+
 /**********************************************************/
 /************************  HISTORY  ***********************/
 .main-history{
@@ -233,7 +249,6 @@ header{
 }
 .content-history-text{
     width: 50%;
-    background-color: yellowgreen;
     padding: 30px;
 }
 /**********************************************************/
@@ -255,7 +270,6 @@ header{
 }
 .content-events-img{
     width: 50%;
-    background-color: yellow;
 }
 .content-events-text{
     
@@ -282,7 +296,7 @@ header{
     display: block;
     text-align: center;
     width: 200px;
-    padding: 20px;
+    padding: 5px;
     box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.64);
 }
 .tabs-content{
@@ -294,9 +308,13 @@ header{
 /******************  MAIN-RESERVATION  ********************/
 .main-reservation{
     text-align: center;
+    background-image: url(../IMG/RESERVATIONS/RESERVATION.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
 }
 .reservation-p{
-    max-width: 500px;
+    max-width: 600px;
     width: 100%;
 }
 .btn.btn-reservation{
@@ -308,25 +326,40 @@ header{
 }
 /**********************************************************/
 /***********************  FOOTER  *************************/
+footer{
+    background-color: black;
+}
 .footer-redes{
     width: 100%;
     padding: 40px 0;
-    background-color: cadetblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .footer-redes>a{
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    background-color: chartreuse;
-    
+    background-color: darkred;
+    color: white; 
+    position: relative; 
+}
+.footer-redes>a>i{
+    position: absolute;
+    left: 30%;
+    top: 25%;
 }
 .footer-redes>a:not(:last-child){
     margin-right: 15px;
 }
 .footer{
     text-align: center;
+    background-color: darkred;
+    color: white;
+    padding: 10px 0;
+}
+.footer .span-footer{
+    font-size: 20px;
+    margin-bottom: 0;
 }
