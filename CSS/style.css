@@ -111,6 +111,12 @@ span{
 .main-reservation{
     padding: 100px 0;
 }
+.main-history{
+    padding-bottom: 50px;
+}
+.main-events{
+    padding-top: 50px;
+}
 /**********************************************************/
 /**********************  HEADER ***************************/
 header{
@@ -245,12 +251,29 @@ header{
 .content-history{
     max-width: 1100px;
     width: 90%;
+    height: 320px;
     background-color: white;
+    display: flex;
+    overflow: hidden;
 }
 .content-history-text{
-    width: 50%;
-    padding: 30px;
+    padding: 20px 30px;
+    width: 600px;
 }
+.content-history-img{
+    overflow: hidden;
+}
+.content-history-img img{
+    object-fit: cover;
+    object-position: center center;
+    height: 350px;
+    transition: all 0.3s;
+}
+.content-history-img img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
+}
+
 /**********************************************************/
 /************************  EVENTS  ***********************/
 .main-events{
@@ -267,17 +290,30 @@ header{
     width: 90%;
     background-color: white;
     display: flex;
-}
-.content-events-img{
-    width: 50%;
+    height: 320px;
+    overflow: hidden;
 }
 .content-events-text{
-    
-    padding: 30px;
+    padding: 20px 40px;
     text-align: right;
 }
-.content-events-text a{
+.content-events-text>a{
     margin-left: auto;
+}
+.content-events-img{
+    overflow: hidden;
+    width: 90%;
+}
+.content-events-img img{
+    object-fit: cover;
+    object-position: center center;
+    height: 350px;
+    width: 100%;
+    transition: all 0.3s;
+}
+.content-events-img img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s;
 }
 /**********************************************************/
 /*************************  TABS  *************************/
@@ -355,7 +391,7 @@ footer{
 }
 .footer{
     text-align: center;
-    background-color: darkred;
+    background-color: rgb(158, 154, 154);
     color: white;
     padding: 10px 0;
 }
