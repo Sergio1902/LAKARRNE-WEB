@@ -1,19 +1,13 @@
+import slider from "./hero_banner.js"
 
-$HEADER = document.querySelector(".main-header")
-$ENLACES_HEADER = document.querySelectorAll(".nav a")
-$HEADER_LOGO = document.querySelector(".header .logo")
+const $HEADER = document.querySelector(".main-header")
+const $ENLACES_HEADER = document.querySelectorAll(".nav a")
+const $HEADER_LOGO = document.querySelector(".header .logo")
 
-
-document.addEventListener("DOMContentLoaded", function (e) {
-
-
-    
-    
-
-
-})
-console.log($HEADER_LOGO)
+////////////////  HEADER SCROLL  //////////////////
 window.onscroll = function() {
+    
+
     let y = window.scrollY;
     if(y >80){
         $HEADER.classList.add("header-pintado")
@@ -28,4 +22,10 @@ window.onscroll = function() {
         });
         $HEADER_LOGO.classList.remove("logo-scroll")
     }
-  };
+};
+//////////////////////////////////////////////////
+document.addEventListener("DOMContentLoaded", function (e) {
+
+    slider()
+    
+    })
