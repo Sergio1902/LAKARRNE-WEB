@@ -36,8 +36,7 @@ h1,h2,h3,h4,h5{
 h1{
     font-family: "BrushType";
     font-size: 120px;
-    line-height: 100px;
-    
+    line-height: 100px; 
 }
 h2{
     font-family: "BrushType";
@@ -87,17 +86,10 @@ span{
     background-color: rgb(192, 18, 18);
     box-shadow: 0px 0px 21px -2px rgba(0,0,0,0.51) inset;
 }
-
 .header-pintado{
     background-color: darkred;
     transition: all 0.5s;
 }
-.enlace-white{
-    color: white;
-    transition: all 0.5s;
-}
-
-
 
 /* title */
 .title{
@@ -153,6 +145,7 @@ header{
 .nav a{
     display: block;
     transition: all 0.5s;
+    color: white;
 }
 /* logo */
 .header .logo{
@@ -183,6 +176,7 @@ header{
     visibility: hidden;
     transition: all 0.8s ease-in-out; 
 }
+
 .content-text{
     display: flex;
     justify-content: flex-start;
@@ -193,6 +187,12 @@ header{
 .content-img{
     width: 50%;
     background-color: turquoise;
+}
+.content-img img{
+    height: 100vh;
+    width: 100%;
+    object-position: center center;
+    object-fit: cover;
 }
 /* btn - hero - banner*/
 .hero-banner{
@@ -210,7 +210,13 @@ header{
     padding: 20px;
     text-align: center;
     background-color: white;
-    border: 1px solid;
+    box-shadow: 0px 1px 33px -19px rgba(0,0,0,0.75) inset;
+    transition: all 0.3s;
+}
+.btn-hero-banner a:hover{
+    background-color: black;
+    transition: all 0.3s;
+    color: white;
 }
 /* circle-hero-banner */
 .circle-hero-banner{
@@ -273,16 +279,20 @@ header{
     font-size: 22px;
 }
 .card-logo{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 18px;
+    width: 180px;
+    margin: 0 auto;
+}
+.card-logo>img{
+    margin-bottom: 15px;
 }
 
 
 /**********************************************************/
 /************************  HISTORY  ***********************/
 .main-history{
-    background-color: black;
+    background-image: url(../IMG/BACKGROUND/philipp-deus-uO95dylxdUM-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 .history{
     display: flex;
@@ -298,7 +308,7 @@ header{
     background-color: white;
     display: flex;
     overflow: hidden;
-    box-shadow: 2px 11px 10px -8px rgba(47, 42, 42, 0.69);
+    box-shadow: -1px 5px 13px -1px rgba(0,0,0,0.68);
 }
 .content-history-text{
     padding: 20px 30px;
@@ -321,7 +331,9 @@ header{
 /**********************************************************/
 /************************  EVENTS  ***********************/
 .main-events{
-    background-color: black;
+    background-image: url(../IMG/BACKGROUND/philipp-deus-uO95dylxdUM-unsplash2.jpg);
+    background-position: center center;
+    background-size: cover;
 }
 .events{
     display: flex;
@@ -336,7 +348,7 @@ header{
     display: flex;
     height: 320px;
     overflow: hidden;
-    box-shadow: 2px 11px 10px -8px rgba(47, 42, 42, 0.69);
+    box-shadow: -1px 5px 13px -1px rgba(0,0,0,0.68);
 }
 .content-events-text{
     padding: 20px 40px;
@@ -380,10 +392,11 @@ header{
     padding: 5px;
     box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.64);
 }
-.tabs-content{
+.tabs-contentS{
     width: 100%;
     height: 400px;
-    background-color: blue;
+    background-color: lawngreen;
+    position: relative;
 }
 /**********************************************************/
 /******************  MAIN-RESERVATION  ********************/
@@ -400,9 +413,9 @@ header{
 }
 .btn.btn-reservation{
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid white;
     width: 200px;  
-    color: black; 
+    color: white; 
     margin: 0 auto; 
 }
 /**********************************************************/
@@ -445,3 +458,43 @@ footer{
     margin-bottom: 0;
 }
 
+/*******************
+    LADING PAGE
+*******************/
+.contenedor{
+    width: 100%;
+    height: 400px;
+    background-color: #2c2928;
+    position: absolute;
+    z-index: 10001;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    opacity: 1;
+    top: 0;
+}
+.carga{
+    width: 70px;
+    height: 70px;
+    border: 10px solid #b63d32;
+    border-top-color: chocolate;
+    border-top-style: groove;
+    border-radius: 50%;
+    animation: girar 2s infinite linear;
+}
+.cerrar{
+    transition: all 0.5;
+    opacity: 0;
+}
+
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/******************************************/
