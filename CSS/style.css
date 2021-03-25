@@ -27,17 +27,14 @@ img{
 a{
     text-decoration: none;
     font-family: "Finland";
-    font-size: 25px;
+    font-size: 22px;
     color: black;
+    letter-spacing: 1px;
 }
 h1,h2,h3,h4,h5{
     margin: 0;
 }
-h1{
-    font-family: "BrushType";
-    font-size: 120px;
-    line-height: 100px; 
-}
+
 h2{
     font-family: "BrushType";
     font-size: 40px;
@@ -80,10 +77,11 @@ span{
     text-align: center;
     color: white;
     transition: all 0.2s;
+    font-size: 25px;
 }
 .btn:hover{
     transition: all 0.2s;
-    background-color: rgb(192, 18, 18);
+    background-color: rgb(173, 9, 9);
     box-shadow: 0px 0px 21px -2px rgba(0,0,0,0.51) inset;
 }
 .header-pintado{
@@ -131,11 +129,13 @@ header{
 }
 .main-header{
     transition: all 0.5s;
+    position: relative;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 50px;
 }
 .nav{
     width: 50%;
@@ -156,6 +156,28 @@ header{
     width: 80px;
     transition: all 0.5s;
 }
+/* btn-delivery */
+.btn-delivery{
+    position: absolute;
+    right: 2%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+}
+/* btn suscribete */
+.nav a:last-child{
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+.nav a:last-child:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.3s;
+    font-weight: bold;
+}
 /**********************************************************/
 /**********************  SLIDER  **************************/
 
@@ -163,6 +185,10 @@ header{
     width: 100%;
     position: relative;
     height: 100vh;
+    background-image: url(../IMG/BACKGROUND/hero-banner.jpg);
+    background-position: center center;
+    background-size: cover;
+    overflow: hidden;
 }
 .slider{
     padding: 0 7.4%;
@@ -183,12 +209,19 @@ header{
     align-items: center;
     width: 50%;
     height: inherit;
+    padding-left: 50px;
+}
+.content-text h1{
+    margin: 0;
+    font-family: "BrushType";
+    font-size: 120px;
+    line-height: 100px; 
+    color: black;
 }
 .content-img{
     width: 50%;
-    background-color: turquoise;
-}
-.content-img img{
+    box-shadow: 0px 2px 10px 8px rgba(0,0,0,0.33);}
+    .content-img img{
     height: 100vh;
     width: 100%;
     object-position: center center;
@@ -209,14 +242,15 @@ header{
     display: block;
     padding: 20px;
     text-align: center;
-    background-color: white;
+    background-color: darkred;
     box-shadow: 0px 1px 33px -19px rgba(0,0,0,0.75) inset;
     transition: all 0.3s;
+    color: white;
 }
 .btn-hero-banner a:hover{
-    background-color: black;
+    background-color: white;
     transition: all 0.3s;
-    color: white;
+    color: black;
 }
 /* circle-hero-banner */
 .circle-hero-banner{
@@ -244,7 +278,7 @@ header{
 .circle-is-active{
     background-color: rgb(185, 10, 10);
     transition: all 0.8s ease-in-out;
-    box-shadow: 0px -1px 5px -1px rgba(0,0,0,0.84);
+
     transform: scale(1.2);
     
 }
@@ -253,6 +287,7 @@ header{
     visibility: visible;
     transition: all 0.8s ease-in-out;
 }
+
 /**********************************************************/
 /********************  DESCRIPTION  ***********************/
 .description{
@@ -305,7 +340,7 @@ header{
     max-width: 1100px;
     width: 90%;
     height: 320px;
-    background-color: white;
+    
     display: flex;
     overflow: hidden;
     box-shadow: -1px 5px 13px -1px rgba(0,0,0,0.68);
@@ -313,6 +348,8 @@ header{
 .content-history-text{
     padding: 20px 30px;
     width: 600px;
+    background-color: white;
+    
 }
 .content-history-img{
     overflow: hidden;

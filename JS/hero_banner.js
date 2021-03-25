@@ -18,7 +18,7 @@ export default function slider() {
 
 
             $CIRCLE[c].classList.remove("circle-is-active")
-            i--
+            c--
             if(c<0){
                 c = $CIRCLE.length - 1
             }
